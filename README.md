@@ -4,12 +4,18 @@
 
 ## 利用web页面页接口
 
+- token的生成: [fuck-dytk.js](./fuck-dytk.js)
+- web页面数字字体对照关系: [iconfont.py](./iconfont.py)
+
 - 优点
 - 缺点
 
 ## 真机/模拟器点击配合中间人攻击
 
-- 可以利用url_scheme实现页面跳转和定位
+- [uiautomator2](https://github.com/openatx/uiautomator2)
+- [mitmproxy](https://github.com/mitmproxy/mitmproxy)
+
+### 可以利用url_scheme实现页面跳转和定位
 
 部分常用的跳转协议
 
@@ -37,5 +43,13 @@ URL_SCHEMA_MAP = {
 ## 特殊的漏洞/后门
 
 ## hook so 库签名方法, 封装api service 调用
+
+- adb
+- frida-server
+
+### 模拟器
+
+- arm support
+- remote access
 
 TODO
