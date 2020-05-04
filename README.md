@@ -44,10 +44,33 @@ URL_SCHEMA_MAP = {
 
 ## hook so 库签名方法, 封装api service 调用
 
-- adb
-- frida-server
+### frida hook
+
+```bash
+wget -O frida-server.xz https://github.com/frida/frida/releases/download/12.8.13/frida-server-12.8.13-android-x86.xz
+xz -d frida-server.xz
+
+adb root
+adb push frida-server /data/local/tmp/
+adb shell "chmod 755 /data/local/tmp/frida-server"
+adb shell "/data/local/tmp/frida-server -l 0.0.0.0"
+```
+
+```javascript
+rpc.exports = {
+    // TODO hook script
+};
+```
 
 ### 模拟器
+
+- [Genymotion](https://www.genymotion.com/)
+
+    `Genymotion` 基于 `VirtualBox` 可以实现跨平台使用, 加上 `Genymotion_ARM_Translation` 的加持完美支持 `ARM`, 个人版本可免费使用。
+
+    - https://www.genymotion.com/download/
+    - https://docs.genymotion.com/desktop/3.0/
+    - https://github.com/m9rco/Genymotion_ARM_Translation
 
 - arm support
 - remote access
