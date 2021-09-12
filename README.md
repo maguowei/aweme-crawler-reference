@@ -79,4 +79,9 @@ rpc.exports = {
 - arm support
 - remote access
 
-TODO
+
+## 实现参考
+
+- [maguowei/aweme-sign](https://github.com/maguowei/aweme-sign) Genymotion + frida hook + frp + restful
+- [maguowei/appium-douyin](https://github.com/maguowei/appium-douyin) appium & mitmproxy
+- [maguowei/app-crawler](https://github.com/maguowei/app-crawler)  uiautomator2 & URL_SCHEMA & mitmproxy
