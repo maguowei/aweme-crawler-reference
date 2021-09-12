@@ -2,6 +2,10 @@
 
 抖音数据抓取研究参考
 
+## 更新 抖音已经上线功能齐全的web版：[抖音web版](https://www.douyin.com/?stay=1)
+
+数据抓取变得方便了
+
 ## 利用web页面页接口
 
 - token的生成: [fuck-dytk.js](./fuck-dytk.js)
